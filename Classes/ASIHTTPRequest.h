@@ -962,6 +962,7 @@ typedef void (^ASIDataBlock)(NSData *data);
 @property (atomic, assign) BOOL allowResumeForFileDownloads;
 @property (atomic, retain) NSDictionary *userInfo;
 @property (atomic, assign) NSInteger tag;
+@property (atomic, assign) NSInteger operationCounter;
 @property (atomic, retain) NSString *postBodyFilePath;
 @property (atomic, assign) BOOL shouldStreamPostDataFromDisk;
 @property (atomic, assign) BOOL didCreateTemporaryPostDataFile;
