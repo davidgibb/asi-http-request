@@ -4763,6 +4763,16 @@ static NSOperationQueue *sharedQueue = nil;
 	[connectionsLock unlock];
 }
 
++ (void)incrementRunningRequestCount {
+    
+    runningRequestCount++;
+}
+
++ (void)decrementRunningRequestCount {
+    
+    runningRequestCount--;
+}
+
 
 #pragma mark threading behaviour
 

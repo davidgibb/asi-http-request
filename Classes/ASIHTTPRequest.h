@@ -866,6 +866,10 @@ typedef void (^ASIDataBlock)(NSData *data);
 
 // Hides the network activity spinner thing on iOS
 + (void)hideNetworkActivityIndicator;
++ (void)hideNetworkActivityIndicatorAfterDelay;
+
++ (void)incrementRunningRequestCount;
++ (void)decrementRunningRequestCount;
 
 #pragma mark miscellany
 
