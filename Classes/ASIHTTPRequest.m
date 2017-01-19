@@ -3667,7 +3667,7 @@ static NSOperationQueue *sharedQueue = nil;
 			}
 		}
 		
-		NSString *reason = @"A connection failure occurred";
+		NSString *reason = @"A connection failure occurred. Check your internet connection.";
 		
 		// We'll use a custom error message for SSL errors, but you should always check underlying error if you want more details
 		// For some reason SecureTransport.h doesn't seem to be available on iphone, so error codes hard-coded
